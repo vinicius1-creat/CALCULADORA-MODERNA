@@ -24,8 +24,8 @@ body{
 
 @Keyframes popIn {
     0%{
-        transform: scale(0.6s);
-        opacity: 1;
+        transform: scale(0.6);
+        opacity: 0;
     }
 }
 
@@ -59,6 +59,12 @@ body{
     }
 }
 
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
 button{
     padding: 15px;
     font-size: 1.2rem;
@@ -72,5 +78,23 @@ button{
 }
 
 button:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,255,213,0.4);
+}
 
+button:active{
+    transform: scale(0.95);
+}
+
+.operator{
+    background: linear-gradient(145deg,#ff7a18,#ff4d00);
+}
+
+.equal{
+    background: linear-gradient(145deg, #00ffd5, #00bfa6);
+    font-weight: bold;
+}
+
+.clear{
+    background: linear-gradient(145deg,#ff0055,#c80042);
 }
