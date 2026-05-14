@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family:'poppins' , sans-serif;
+    font-family:'Poppins' , sans-serif;
 }
 
 body{
@@ -26,6 +26,10 @@ body{
     0%{
         transform: scale(0.6);
         opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
@@ -92,6 +96,8 @@ button:active{
 
 .equal{
     background: linear-gradient(145deg, #00ffd5, #00bfa6);
+    columns: #000;
+    grid-column: span 2;
     font-weight: bold;
 }
 
