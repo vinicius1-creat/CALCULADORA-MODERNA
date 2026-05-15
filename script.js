@@ -3,7 +3,7 @@ const mood = document.getElementById("mood");
 
 
 const moods = [
-    "Math is FUN!"
+    "Math is FUN!",
     "Let's Gooo!", 
     "Number love you",
     "Big brain moment",
